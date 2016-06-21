@@ -1,0 +1,238 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,maximum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="format-detection" content="email=no")
+		meta(name="keywords" content="滴士分期,的士分期,的哥贷款,出租车司机贷款")
+		title 首页
+		link(rel="stylesheet" href="#{static_css}/common.css")
+		link(rel="stylesheet" href="#{static_css}/index.css")
+	body
+		.m
+			span.title 基本信息
+			.base
+				ul
+					li
+						span.t1
+						span.name 事件编号
+						span.value 1234567890
+					li
+						span.t2
+						span.name 负责街道
+						span.value 李村街道办事处
+					li
+						span.t3
+						span.name 事件状态
+						span.value 未完成
+		.m
+			span.title 事件详情
+			.im_list
+				.imu_title
+					img(src="#{static_img}/com_header_user.png")
+					.imut_content
+						span 匿名用户
+						span 2016-01-02 12:00
+						div
+							span.span_img
+							span 延寿宫路217号新起点创业广场
+				.imu_content 延寿公路站牌那里的垃圾桶着火了，希望可以及时换个新的。
+				.imu_play
+					span.imup_btn 播放录音
+					img(src="#{static_img}/com_play_main.png")
+					.ims_num
+						//span 3张
+					.imu_img
+						div
+							img(src="#{static_img}/com_pic.png")
+						div
+							img(src="#{static_img}/com_pic.png")
+						div
+							img(src="#{static_img}/com_pic.png")
+		.m.event
+			span.title 事件跟踪
+			.content
+				ul
+					li.s1
+						.ban
+							.total
+								span.pic
+							.con
+								span.name 转件人
+								span.value 王主任
+							img(src='#{static_img}/com_header_sjr.png')
+						.state
+							.s_state
+								span.yuan &nbsp;
+								span.time 于2016-12-12 12:00
+								span.s 已转办
+								.s_sj_operate
+									span.pic.s1
+									span 事件转办
+					li.zb
+						.ban
+							span 收件人
+							.js 
+								select.danwei
+									option(value="1") 李村街道办事处
+									option(value="2") 房村街道办事处
+								select.name
+									option(value="1") 王某某
+									option(value="2") 房某某
+							span 预计完成时间
+							.time
+								select.nian
+									option(value="1") 2016
+									option(value="2") 2017
+								span 年
+								select.yue
+									option(value="1") 1
+									option(value="2") 2
+									option(value="3") 3
+									option(value="4") 4
+								span 月
+								select.ri
+									option(value="1") 1
+									option(value="2") 2
+									option(value="3") 3
+								span 日
+							.btn
+								button#zb_btn 确定
+					li.s2
+						.ban
+							.total
+								span.pic
+							.con
+								span.name 收件人
+								span.value 李村街道王某某
+							img(src='#{static_img}/com_header1.png')
+						.state
+							.s_state
+								span.yuan &nbsp;
+								span.time 于2016-12-16 13:00
+								span.s 已阅读
+					li.s3
+						.ban
+							.total
+								span.pic
+							.con
+								span.name 预计时间
+								span.value 2016-12-20
+						.state
+							.s_state
+								span.yuan &nbsp;
+								span.time 距预计时间还有48小时
+								//span.s 已转办
+								.s_sj_operate
+									span.pic.s3
+									span 申请延期
+					li.sq
+						.ban
+							span.title 申请延期
+								input(maxLength="2")
+								|天，延期说明：
+							.tx
+								textarea(placeholder="此处可输入30字")
+								.btn 
+									button 确定
+							.tj
+								span 延期说明延期说明延期说明延期说明延期说明延期说明延期说明延期说明延期说明延期说	明延期说明延期说明延期说明
+								.btn
+									button.sure 确认
+									button.no 返回
+					li.s4
+						.ban
+							.total
+								span.pic
+							.con
+								span.name 完成时间
+								span.value 2016-12-23
+								span.fail （延期已驳回）
+								//span.add （逾期3天）
+						.state
+							.s_state
+								span.yuan &nbsp;
+								span.time 已完成
+								//span.s 已转办
+					li.s5
+						.kong
+						.ban
+							.total
+								span.pic
+							.finish
+								span.name 完成情况
+								span.value 感谢对我们的支持，感谢为城市建设贡献一份力量，若您觉得满意，请点咱我们，或发表评论，我们会继续努力！
+								.ims_num
+									//span 3张
+								.imu_img
+									div
+										img(src="#{static_img}/com_pic.png")
+									div
+										img(src="#{static_img}/com_pic.png")
+									div
+										img(src="#{static_img}/com_pic.png")
+
+		.m
+			.deal
+				span 处理意见
+				.op
+					span.pic
+					span.publish 发表
+			ul
+				li
+					.im_list
+						.imu_title
+							img(src="#{static_img}/com_header_user.png")
+							.imut_content
+								span.name 用户A
+								span.time 5分钟前
+								em.zan
+								span.num 8
+								div
+									span.content 用户评论，用户评论用户评论。
+				li
+					.im_list
+						.imu_title
+							img(src="#{static_img}/com_header_user.png")
+							.imut_content
+								span.name 用户B
+								span.time 5分钟前
+								em.zan.hui
+								span.num 9
+								div
+									span.content 用户评论，用户评论用户评论。
+				li
+					.im_list
+						.imu_title
+							img(src="#{static_img}/com_header_user.png")
+							.imut_content
+								span.name 用户C
+								span.time 5分钟前
+								em.zan
+								span.num 10
+								div
+									span.content 用户评论，用户评论用户评论。
+		.footer
+			span @KeePower
+
+		.pop_container
+		.m_alert
+			.m_main
+				span 一经确认无法修改
+				span 是否提交？
+				.operate
+					span#sure 确认
+					span#back 返回
+	.m_publish
+		.pm_content
+			textarea(placeholder="我的想法...")
+		.btn
+			button.cancel 取消
+			button.sure 发表
+
+		script(src="#{static_js}/jquery.min.js")
+		script(src="#{static_js}/common.js")
+		script(src="#{static_js}/index.js")
+

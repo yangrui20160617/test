@@ -1,0 +1,334 @@
+$static_img:'../../res/img';
+body{
+	background-color:#f8f8f8;
+}
+span.pic{
+	background: url(#{$static_img}/list_imglist.png?__t=1456330953376) center center no-repeat;
+    background-size: .20rem 1.13rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.m_head{
+	position: fixed;
+    width: 100%;
+	z-index: 20;
+	top:0;
+	background-color: #f8f8f8;
+	.m_search{
+		height: .46rem;
+		line-height: .46rem;
+		border-bottom: 1px #d6d6d6 solid;
+		div{
+			display: inline-block;
+			float: left;
+			text-align: center;
+			&.ms_back{
+				width: 11%;
+				span{
+					background-position: 0 0;
+					height: .19rem;
+	    			width: .11rem;
+				}	
+			} 
+			&.ms_content{
+				width: 78%;
+				input{
+	    			width: 97%;
+	    			border: 1px #bdbdbd solid;
+	    			height: .30rem;
+	    			border-radius: .03rem;
+				}
+			}
+			&.ms_search{
+				width: 11%;
+				span{
+					height: .20rem;
+	    			width: .20rem;
+					background-position: 0 -.21rem;
+				}
+			} 
+		}
+	}
+	.m_nav{
+		background-color: #fff;
+		height: .35rem;
+		border-bottom: 1px #d6d6d6 solid;
+		nav{
+			float: left;
+	   		width: 33.3%;
+	   		line-height: .35rem;
+	   		text-align: center;
+
+	   		span{
+	   			margin-left: .07rem;
+	   			&.sel{
+	   				color: #01b7a8;
+	   			}
+	   			&:first-child{
+	   			margin-left: 0;
+	   		}
+	   		}
+			.mn_event{
+				border-right: 1px #d6d6d6 solid;
+				span.pic{
+					height: .08rem;
+	    			width: .13rem;
+	    			background-position: 0 -.43rem;
+				}
+			}
+			.mn_time{
+				border-right: 1px #d6d6d6 solid;
+				span.pic{
+					height: .05rem;
+	    			width: .10rem;
+	    			background-position: 0 -.53rem;
+				}
+			}
+			.mn_select{
+				span.pic{
+					height: .15rem;
+	    			width: .18rem;
+	    			background-position: 0 -.59rem;
+				}
+			}
+		}
+	}
+}
+.mn_elist{
+	display: none;
+	position: fixed;
+	z-index: 15;
+	top:.83rem;
+	left:0;
+	padding: .05rem .15rem;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+		span{
+			line-height: .25rem;
+			display: block;
+			&.sel{
+				color: #01b7a8;
+			}
+		}
+}
+.mn_t{
+	display: none;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+	.mn_etime{
+		margin-left: .50rem;
+    	background-color: #f8f8f8;
+    	height: 100%;
+		.mne_title{
+			height: .46rem;
+	    	line-height: .46rem;
+	    	border-bottom: 1px #d6d6d6 solid;
+	    	text-align: center;
+	    	padding: 0 .12rem;
+	    	color: #5f5f5f;
+	    	span{
+	    		display: inline-block;
+	    		&:first-child{
+	    			float: left;
+	    			background-position: 0 0;
+	   				height: .19rem;
+	    			width: .11rem;
+	    			margin-top: .13rem;
+	    		}
+	    		&:last-child{
+	    			float: right;
+	    		}
+	    	}
+		}
+		.mne_content{
+			>span{
+				display: block;
+				border-bottom: 1px #d6d6d6 solid;
+				padding: .08rem .12rem .05rem;
+    			color: #01b7a8;
+			}
+			.mne{
+				padding: .16rem .12rem .08rem;
+				border-bottom: 1px #d6d6d6 solid;
+				font-size: .12rem;
+				color: #7f8385;
+				.mnetime_start,.mnetime_end{
+					select{
+						margin-left: .10rem;
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+					span{
+						
+						border: 1px #c8c8c8 solid;
+    					border-radius: .03rem;
+    					padding: .01rem;
+					}
+				}
+				.mnetime_zhong{
+					text-align: right;
+				}
+			}
+			.mne_btn{
+				text-align: center;
+				padding-top: .16rem;
+				button{
+					color: #7f8385;
+					border: 1px #d6d6d6 solid;
+					background-color: #fff;
+					padding:.04rem .18rem;
+					border-radius: .03rem;
+				}
+			}
+			
+		}
+	}
+}
+
+.m_body{
+	position: absolute;
+	z-index: 5;
+	top:.83rem;
+	left:0;
+	padding-bottom: .20rem;
+	.m_list{
+		background-color: #fff;
+		li{
+			border-bottom: 1px #d6d6d6 solid;
+	    	padding: .10rem .15rem .05rem;
+			.ml_content{
+				span.content{
+					line-height: .20rem;
+				}
+				.mlc_status{
+					display: inline-block;
+	            	span{
+	            		&.t_head{
+							width: 0;
+	    					height: 0;
+	    					border-bottom: .09rem solid transparent;
+	    					border-top: .08rem solid transparent;
+	    					font-size: 0;
+	    					line-height: 0;
+	    					display: inline-block;
+	    					margin-top: -.01rem;
+	    					vertical-align: middle;
+	            		}
+					}
+					.d_body{
+						display: inline-block;
+	    				margin-left: -.05rem;
+	    				padding: .02rem;
+	    				border-radius: .04rem;
+	   					span.t_body{	
+	    					font-size: .12rem;
+	    					padding-left: .04rem;
+	    					color: #fff;
+	    					padding-right: .03rem;
+	            		}
+	            		em{
+	    					float: left;
+	    					width: .06rem;
+	    					height: .06rem;
+	    					background-color: #fff;
+	    					border-radius: .07rem;
+	    					margin-top: .04rem;
+	    					margin-left: -.03rem;
+	    				}
+					}
+					&.color_j_y{
+						span.t_head{
+							border-right: .12rem solid #8ac957;
+						}
+						.d_body{
+							background-color: #8ac957;
+						}
+					}
+					&.color_j_n{
+						span.t_head{
+							border-right: .12rem solid #fe5864;
+						}
+						.d_body{
+							background-color: #fe5864;
+						}
+					}
+					&.color_s_y{
+						span.t_head{
+							border-right: .12rem solid #8ac957;
+						}
+						.d_body{
+							background-color: #8ac957;
+						}
+					}
+					&.color_s_n{
+						span.t_head{
+							border-right: .12rem solid #fe5864;
+						}
+						.d_body{
+							background-color: #fe5864;
+						}
+					}
+					&.color_z_y{
+						span.t_head{
+							border-right: .12rem solid #4ba9ff;
+						}
+						.d_body{
+							background-color: #4ba9ff;
+						}
+					}
+					&.color_z_n{
+						span.t_head{
+							border-right: .12rem solid #fe5864;
+						}
+						.d_body{
+							background-color: #fe5864;
+						}
+					}
+				}
+			}
+			.ml_tip{
+				line-height: .25rem;
+				height: .25rem;
+				text-align: right;
+				div{
+					display: inline-block;
+					>span:nth-child(2){
+						color: #797979;
+						vertical-align: middle;
+						margin-left: .05rem;
+					}
+				}
+				.mlt_tip{
+					float: left;
+					span.pic{
+						height: .18rem;
+	    				width: .14rem;
+	    				background-position: 0 -.76rem;
+					}
+				}
+				.mlt_time{
+					span.pic{
+						height: .18rem;
+	    				width: .18rem;
+	    				background-position: 0 -.95rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+#pop2{
+	z-index: 25;
+}
+
+
+
+
+
+
